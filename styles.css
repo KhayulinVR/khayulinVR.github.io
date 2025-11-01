@@ -1,0 +1,81 @@
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Шапка с меню */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    /* Стили для логотипа. Измените width/height, если нужно */
+    width: 100px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul li a:hover {
+    background-color: #555;
+}
+
+/* Основной контент */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive дизайн для мобильных */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    ul li {
+        margin: 10px 0;
+    }
+}

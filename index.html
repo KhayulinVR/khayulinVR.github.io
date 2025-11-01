@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя визитка</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Ссылка на стили -->
+    <title>Хайулин Вадим Рафикович — Программист & Преподаватель</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <!-- Здесь разместите логотип. Замените src на путь к вашему изображению (загрузите файл logo.png в репозиторий) -->
-                <a href="index.html"><img src="logo.png" alt="Логотип" width="100"></a>
+            <div class="logo-text">
+                <a href="index.html">Вадим Хайулин</a>
             </div>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <!-- Вкладка "Мои проекты": замените href на ссылку на ваш внешний сайт с проектами, например, https://example.com/projects -->
-                <li><a href="https://example.com/projects" target="_blank">Мои проекты</a></li>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="projects.html">Мои проекты</a></li>
                 <li><a href="teaching.html">Преподавательская</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Добро пожаловать на мою визитку!</h1>
-        <!-- Здесь добавьте свой текст о себе. Замените на личную информацию -->
-        <p>Привет! Я [Ваше имя]. Здесь вы можете узнать о моих проектах и преподавательской деятельности.</p>
+        <section class="hero">
+            <!-- МЕСТО ДЛЯ ГЛАВНОГО ФОТО: Загрузите photo1.jpg -->
+            <img src="photo1.jpg" alt="Вадим Хайулин" class="hero-photo">
+            <div class="hero-text">
+                <h1>Хайулин Вадим Рафикович</h1>
+                <p class="subtitle">Программист • Разработчик • Преподаватель программирования и технических наук</p>
+                <p><strong>25 лет</strong> • Родился 9 марта 2000 • <strong>Челябинск</strong></p>
+                <p>Готов к переезду по России, командировкам, удалёнке. Опыт: <strong>4+ года</strong>.</p>
+                <div class="contacts">
+                    <a href="tel:+79085853991" class="btn">+7 (908) 585-39-91</a>
+                    <a href="mailto:hayulinvadim@gmail.com" class="btn">hayulinvadim@gmail.com</a>
+                    <a href="https://github.com/KhayulinVR" target="_blank" class="btn">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <!-- МЕСТА ДЛЯ ДОПОЛНИТЕЛЬНЫХ ФОТО: Загрузите photo2.jpg и photo3.jpg -->
+            <img src="photo2.jpg" alt="Фото 2" class="gallery-photo">
+            <img src="photo3.jpg" alt="Фото 3" class="gallery-photo">
+        </section>
     </main>
 
     <footer>
-        <!-- Замените на свой копирайт или контакты -->
-        <p>&copy; 2025 [Ваше имя]. Все права защищены.</p>
+        <p>&copy; 2025 Вадим Хайулин. Все права защищены.</p>
     </footer>
 </body>
 </html>
